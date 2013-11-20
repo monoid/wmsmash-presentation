@@ -1,0 +1,18 @@
+\begin{frame}
+  \frametitle{Решение}
+  
+  Решение: пользовательские тематические наборы карт -- виртуальные
+  WMS-сервера.
+
+  \begin{itemize}
+  \item Составление наборов пользователям -- \textbf{Django} +
+    \textbf{ExtJS 3.x}.
+  \item Транслирование WMS-запросов к вышестоящим WMS-серверам -- \textbf{Twisted}.
+  \item Регулярная индексация информации о серверах (GetCapabilities)
+    -- консольная утилита с использованием ORM Django + \textbf{cron}.
+  \end{itemize}
+\end{frame}
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "presentation"
+%%% End: 

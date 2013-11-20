@@ -1,0 +1,22 @@
+\begin{frame}
+  \frametitle{Задача}
+
+  \begin{itemize}
+  \item Протокол WMS -- как запросить кусочек карты в нужной проекции,
+    с нужными координатами, набором слоёв, стилей и т.п. с
+    картографического сервера по HTTP (GET).
+  \item Можно адресовать только сервер, но не слой на сервере :(
+  \item Слоёв много, они спрятаны в древовидной структуре.
+  \end{itemize}
+
+  Три типа запроса:
+  \begin{description}
+  \item[GetCapabilities] Информация о сервере, в т.ч. дерево слоёв.
+  \item[GetMap] Картинка с картой.
+  \item[GetFeatureInfo] Информация об объекте по координатам картинки.
+  \end{description}
+\end{frame}
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "presentation"
+%%% End: 
