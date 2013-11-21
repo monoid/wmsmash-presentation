@@ -1,7 +1,11 @@
 \begin{frame}
   \frametitle{Как устроен прокси}
 
-  Структура классов...
+  \begin{itemize}
+  \item WmsQuery (GetCapabilities, RemoteDataRequest {\scriptsize Deferred} (GetFeatureInfo, GetMap))
+  \item DumbHTTPClient
+  \item DumbHTTPClientFactory {\scriptsize Deferred} (ProxyClientFactory, ImageClientFactory, TextClientFactory)
+  \end{itemize}
 \end{frame}
 %%% Local Variables: 
 %%% mode: latex

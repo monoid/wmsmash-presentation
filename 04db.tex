@@ -1,14 +1,14 @@
 \begin{frame}
   \frametitle{Модели}
 
+  mptt не позволяет вставить в середину папки. А порядок \emph{важен!}
+
   \begin{itemize}
-  \item mptt не позволяет вставить в середину папки. А порядок \emph{важен!}
-  \item свой mptt с феями и единорогами -- списки смежности.
+  \item TreeNode -- списки смежности (Layer с сервера, LayerTree из набора)
+  \item Server, Set -- сервер и набор
+  \item NamedLayer, NamedLayerTree
+  \item \texttt{acl = models.ManyToManyField(User)}
   \end{itemize}
-
-  \pause
-
-  % Модели Django
 \end{frame}
 %%% Local Variables: 
 %%% mode: latex
